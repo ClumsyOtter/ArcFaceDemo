@@ -1,0 +1,8 @@
+FaceDB 是存储模块
+    FaceRegist  是注册了的人脸容器(目的实现一个名字对应多的跟
+        name  String类型
+        mFaceList  List类型
+DetecterActivity 是识别模块
+PermissionAcitivity 权限模块
+RegisterActivity 注册模块
+SqliteFace 数据库模块

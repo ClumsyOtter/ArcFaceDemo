@@ -26,13 +26,13 @@
         </activity>
         <activity
             android:name="com.arcsoft.GraduateDesign.RegisterActivity"
-            android:theme="@style/NoTitleBar"></activity>
+            android:theme="@style/NoTitleBar" />
         <activity
             android:name="com.arcsoft.GraduateDesign.DetecterActivity"
-            android:theme="@style/NoTitleBar"></activity>
+            android:theme="@style/NoTitleBar" />
         <activity
             android:name="com.arcsoft.GraduateDesign.MainActivity"
-            android:theme="@style/NoTitleBar"></activity>
+             />
     </application>
 
 </manifest>

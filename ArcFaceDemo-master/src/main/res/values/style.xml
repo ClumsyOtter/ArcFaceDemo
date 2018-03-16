@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="NoTitleBar">
         <item name="android:windowNoTitle">true</item>
     </style>
-    
+
+    <style name="FaceButtonStyle">
+        <item name="android:layout_marginEnd">10sp</item>
+        <item name="android:layout_marginStart">10sp</item>
+        <item name="android:layout_marginTop">20sp</item>
+        <item name="android:layout_marginBottom">20sp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
 </resources>
