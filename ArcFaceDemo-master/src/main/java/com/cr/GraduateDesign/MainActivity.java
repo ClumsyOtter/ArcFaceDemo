@@ -1,4 +1,4 @@
-package com.arcsoft.GraduateDesign;
+package com.cr.GraduateDesign;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -43,6 +43,8 @@ public class MainActivity extends Activity implements OnClickListener {
         v.setOnClickListener(this);
         v = this.findViewById(R.id.button2);
         v.setOnClickListener(this);
+        View res = findViewById(R.id.reset);
+        res.setOnClickListener(this);
     }
 
     /* (non-Javadoc)
@@ -86,9 +88,16 @@ public class MainActivity extends Activity implements OnClickListener {
 
     @Override
     public void onClick(View paramView) {
-        // TODO Auto-generated method stub
         switch (paramView.getId()) {
+            //出厂设置
+            case R.id.reset:
+                Log.i("click", "reset");
+                PrefManager prefManager = new PrefManager(getApplicationContext());
+                prefManager.setFirstTimeLaunch(true);
+                finish();
+                break;
             case R.id.button2:
+                Log.i("click", "button2");
                 if (((Application) getApplicationContext()).mFaceDB.mRegister.isEmpty()) {
                     Toast.makeText(this, "没有注册人脸，请先注册！", Toast.LENGTH_SHORT).show();
                 } else {
@@ -105,6 +114,7 @@ public class MainActivity extends Activity implements OnClickListener {
                 }
                 break;
             case R.id.button1:
+                Log.i("click", "button1");
                 new AlertDialog.Builder(this)
                         .setTitle("请选择注册方式")
                         .setIcon(android.R.drawable.ic_dialog_info)

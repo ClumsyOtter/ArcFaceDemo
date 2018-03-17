@@ -1,4 +1,4 @@
-package com.arcsoft.GraduateDesign;
+package com.cr.GraduateDesign;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -39,9 +39,6 @@ import com.guo.android_extend.widget.HListView;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by gqj3375 on 2017/4/27.
- */
 
 public class RegisterActivity extends Activity implements SurfaceHolder.Callback {
     private final String TAG = this.getClass().toString();
@@ -69,7 +66,6 @@ public class RegisterActivity extends Activity implements SurfaceHolder.Callback
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
         this.setContentView(R.layout.activity_register);
         //initial data.
@@ -109,7 +105,7 @@ public class RegisterActivity extends Activity implements SurfaceHolder.Callback
 
                 AFD_FSDKEngine engine = new AFD_FSDKEngine();
                 AFD_FSDKVersion version = new AFD_FSDKVersion();
-                List<AFD_FSDKFace> result = new ArrayList<AFD_FSDKFace>();
+                List<AFD_FSDKFace> result = new ArrayList<>();
                 AFD_FSDKError err = engine.AFD_FSDK_InitialFaceEngine(FaceDB.appid, FaceDB.fd_key, AFD_FSDKEngine.AFD_OPF_0_HIGHER_EXT, 16, 5);
                 Log.d(TAG, "AFD_FSDK_InitialFaceEngine = " + err.getCode());
                 if (err.getCode() != AFD_FSDKError.MOK) {
@@ -315,25 +311,21 @@ public class RegisterActivity extends Activity implements SurfaceHolder.Callback
 
         @Override
         public int getCount() {
-            // TODO Auto-generated method stub
             return ((Application) mContext.getApplicationContext()).mFaceDB.mRegister.size();
         }
 
         @Override
         public Object getItem(int arg0) {
-            // TODO Auto-generated method stub
             return null;
         }
 
         @Override
         public long getItemId(int position) {
-            // TODO Auto-generated method stub
             return position;
         }
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            // TODO Auto-generated method stub
             Holder holder = null;
             if (convertView != null) {
                 holder = (Holder) convertView.getTag();

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.arcsoft.GraduateDesign">
+    package="com.cr.GraduateDesign">
     <!-- camera -->
     <uses-permission android:name="android.permission.CAMERA" />
     <!-- sdcard -->
@@ -9,14 +9,14 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name="com.arcsoft.GraduateDesign.Application"
+        android:name="com.cr.GraduateDesign.Application"
         android:allowBackup="true"
         android:icon="@mipmap/face_indentify"
         android:label="@string/app_name"
         android:supportsRtl="true">
 
         <activity
-            android:name="com.arcsoft.GraduateDesign.PermissionAcitivity"
+            android:name="com.cr.GraduateDesign.PermissionAcitivity"
             android:theme="@style/NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,14 +25,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.arcsoft.GraduateDesign.RegisterActivity"
+            android:name="com.cr.GraduateDesign.RegisterActivity"
             android:theme="@style/NoTitleBar" />
         <activity
-            android:name="com.arcsoft.GraduateDesign.DetecterActivity"
+            android:name="com.cr.GraduateDesign.DetecterActivity"
             android:theme="@style/NoTitleBar" />
+        <activity android:name="com.cr.GraduateDesign.MainActivity" />
+
         <activity
-            android:name="com.arcsoft.GraduateDesign.MainActivity"
-             />
+            android:name="com.cr.GraduateDesign.WelcomeActivity"
+            android:theme="@style/NoTitleBar" />
     </application>
 
 </manifest>

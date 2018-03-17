@@ -1,4 +1,4 @@
-package com.arcsoft.GraduateDesign;
+package com.cr.GraduateDesign;
 
 import android.Manifest;
 import android.app.Activity;
@@ -91,7 +91,7 @@ public class PermissionAcitivity extends Activity {
 						@Override
 						public void run() {
 							mProgressDialog.cancel();
-							Intent intent = new Intent(PermissionAcitivity.this, MainActivity.class);
+							Intent intent = new Intent(PermissionAcitivity.this, WelcomeActivity.class);
 							startActivityForResult(intent, PERMISSION_REQ);
 						}
 					});

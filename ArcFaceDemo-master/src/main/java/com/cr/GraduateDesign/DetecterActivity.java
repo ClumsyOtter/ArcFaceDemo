@@ -1,4 +1,4 @@
-package com.arcsoft.GraduateDesign;
+package com.cr.GraduateDesign;
 
 import android.app.Activity;
 import android.graphics.Bitmap;

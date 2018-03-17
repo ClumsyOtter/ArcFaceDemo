@@ -1,4 +1,4 @@
-package com.arcsoft.GraduateDesign.ArcFaceHelper;
+package com.cr.GraduateDesign.ArcFaceHelper;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

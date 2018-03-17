@@ -1,4 +1,4 @@
-package com.arcsoft.GraduateDesign;
+package com.cr.GraduateDesign;
 
 import android.content.Context;
 import android.database.Cursor;

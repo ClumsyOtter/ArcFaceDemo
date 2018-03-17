@@ -1,4 +1,4 @@
-package com.arcsoft.GraduateDesign;
+package com.cr.GraduateDesign;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,8 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
-import com.arcsoft.GraduateDesign.ArcFaceHelper.SqliteTools;
-import com.arcsoft.facerecognition.AFR_FSDKFace;
+import com.cr.GraduateDesign.ArcFaceHelper.SqliteTools;
 
 
 //存储界面
